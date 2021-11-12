@@ -1,0 +1,130 @@
+<html >
+<head>
+    
+    <title>Akhil Web Page</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+        <a class="logo" href="#">Vuyyuru<span>Akhil</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="image/menu.svg" alt="Open Navigation">
+
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="image/exit.svg" alt="Close Navigation">
+            
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a></li>
+                
+            </ul>
+
+            <ul class="secondary-nav">
+               
+                <li class="go-premium-cta"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="container">
+        <div class="left-col">
+            <p class="subhead">Hi I am Akhil !</p>
+            <h1>Student at Vit-Ap, And a Member in CSI Club</h1>
+
+            <div class="hero-cta">
+                <a href="#" class="primary-cta">CSIVITAP211206</a>
+                
+            </div>
+        </div>
+
+        <img src="https://assets.codepen.io/2621168/illustration.svg" class="hero-img" alt="Illustration">
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <ul class="features-list">
+            <li>Love To Communicate with others</li>
+            <li>Problem Solver</li>
+            <li>Love to Code</li>
+            <li>Active  in Social Media</li>
+            <li>Passinated Towards Work</li>
+            <li>With Good Sence of Humor </li>
+        </ul>
+
+        <img src="https://assets.codepen.io/2621168/holding-phone.jpg" alt="Man holding phone">
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="image/Akhi.jpg" alt="Person">
+
+                <blockquote>"Completed my Schooling in Montessori school, Duggirala"</blockquote>
+                <cite> -Andhra Pradesh</cite>
+            </li>
+            <li>
+                <img src="image/Akhi.jpg" alt="Person">
+
+                <blockquote>"Completed my Intermediate in Narayana Junior College, Vijayawada"</blockquote>
+                <cite> -Andhra Pradesh</cite>
+            </li>
+            <li>
+                <img src="image/Akhi.jpg" alt="Person">
+
+                <blockquote>"Currently pursuing my 3rd year B-Tech Degree in Vit-Ap."</blockquote>
+                <cite>-Andhra Pradesh</cite>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Contact</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send message">
+            </form>
+        </div>
+        <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.590154176306!2d80.49847891489904!3d16.4962776886183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f27d40f21c55%3A0x1490eacd54859850!2sVIT-AP%20University!5e0!3m2!1sen!2sin!4v1636640582507!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        
+
+    </div>
+
+    <script>
+        const mobileBtn=document.getElementById('mobile-cta')
+               nav= document.querySelector('nav')
+               mobileBtnExit=document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', ()=>{
+            nav.classList.add('mobile-btn');
+
+        })       
+
+        mobileBtnExit.addEventListener('click',() =>{
+            nav.classList.remove('mobile-btn');
+        })
+    </script>
+
+    
+</section>
+
+
+
+
